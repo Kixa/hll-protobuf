@@ -1,0 +1,9 @@
+syntax = "proto3";
+package kixa.hll;
+
+option go_package = "github.com/kixa/hll-protobuf";
+
+message Sketch {
+  string version = 1;
+  repeated uint32 registers = 2;
+}
